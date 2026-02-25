@@ -1,59 +1,33 @@
-# ChallengeMaquetadorRiu
+# Challenge Maquetador - Riu News Portal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
+Este proyecto es una solución al reto técnico propuesto por Riu.
 
-## Development server
+## Arquitectura y Decisiones Técnicas
 
-To start a local development server, run:
+### 1. Atomic Design como Sistema de Diseño
 
-```bash
-ng serve
-```
+Implementé la metodología **Atomic Design** para organizar la interfaz. Esto permite que el sistema de diseño sea predecible y que los componentes sean altamente reutilizables:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Atoms (`a-`)**: Componentes base (Icono, Imagen, Botón) que no se pueden dividir más.
+- **Molecules (`m-`)**: Combinaciones de átomos que forman unidades funcionales (NewsCard, ArticleCardFeatured).
+- **Organisms (`o-`)**: Secciones complejas de la página que combinan moléculas y átomos (Hero, NewsGrid, FeaturedArticles).
+- **Pages (`p-`)**: Vistas finales que ensamblan los organismos (Home).
 
-## Code scaffolding
+### 2. BEM y Tailwind 4
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+El proyecto comenzó con un enfoque **Utility-First** (clases directas de Tailwind) para prototipar rápidamente la estructura y el layout según el diseño de Figma.
 
-```bash
-ng generate component component-name
-```
+Una vez validada la fidelidad visual, realicé una **refactorización estructural** hacia **BEM + SCSS (@apply)**. 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 3. Rendimiento y Assets
 
-```bash
-ng generate --help
-```
+- **Imágenes Fluidas**: Implementación de contenedores con `aspect-ratio` para garantizar un layout estable mientras las imágenes cargan.
+- **Componentes Standalone**: Arquitectura basada en Angular 20 para una carga más eficiente y modular.
+- **Mobile First**: Desarrollo centrado en la respuesta fluida desde dispositivos móviles hasta pantallas Ultra-Wide.
 
-## Building
+### 4. Stack Tecnológico
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Framework**: Angular 20 (Standalone Components).
+- **Estilos**: Tailwind CSS 4 + SCSS (Metodología BEM).
+- **Iconografía**: SVG optimizado.
+- **Accesibilidad**: Uso de HTML5 semántico y roles ARIA para una navegación inclusiva.
