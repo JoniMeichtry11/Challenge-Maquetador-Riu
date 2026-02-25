@@ -1,6 +1,3 @@
-:host {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+.a-image {
+  @apply block h-full w-full object-cover;
 }

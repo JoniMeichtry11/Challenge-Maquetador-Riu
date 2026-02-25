@@ -1,0 +1,31 @@
+.m-article-card-featured {
+  @apply group relative flex h-[378px] w-[284px] md:h-[480px] md:w-[360px] flex-col justify-end overflow-hidden rounded-lg bg-zinc-200;
+
+  &__background {
+    @apply absolute inset-0 z-0;
+  }
+
+  &__content {
+    @apply relative z-10 flex flex-col gap-2 p-4 text-white bg-gradient-to-b from-transparent to-black;
+  }
+
+  &__title {
+    @apply text-3xl font-bold leading-9;
+  }
+
+  &__text {
+    @apply text-base;
+  }
+
+  &__link {
+    @apply mt-4 flex gap-2 font-bold no-underline text-white;
+  }
+
+  &__link-text {
+    @apply font-bold leading-6;
+  }
+
+  &__link-icon {
+    @apply w-6 h-6;
+  }
+}

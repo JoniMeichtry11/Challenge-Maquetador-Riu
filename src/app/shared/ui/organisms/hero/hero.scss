@@ -1,0 +1,51 @@
+.o-hero {
+  @apply bg-zinc-100 py-24;
+
+  &__container {
+    @apply mx-auto max-w-[1542px] px-8;
+  }
+
+  &__card {
+    @apply bg-white rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.2)] p-8 flex flex-col md:flex-row gap-8;
+  }
+
+  &__image-wrapper {
+    @apply md:w-1/2;
+  }
+
+  &__image {
+    @apply rounded-lg;
+  }
+
+  &__content {
+    @apply md:w-1/2 flex flex-col justify-between;
+  }
+
+  &__info {
+    @apply space-y-4;
+  }
+
+  &__meta {
+    @apply flex gap-2;
+  }
+
+  &__meta-icon {
+    @apply w-6 h-6;
+  }
+
+  &__meta-text {
+    @apply font-bold text-zinc-800;
+  }
+
+  &__title {
+    @apply text-2xl font-semibold text-zinc-800;
+  }
+
+  &__description {
+    @apply text-base text-zinc-800;
+  }
+
+  &__action {
+    @apply mt-6 self-end;
+  }
+}

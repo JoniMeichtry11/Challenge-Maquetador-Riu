@@ -1,0 +1,27 @@
+.o-featured-articles {
+  @apply flex flex-col max-w-[1542px] gap-12 mx-auto px-8 py-24;
+
+  &__header {
+    @apply flex flex-col gap-6;
+  }
+
+  &__title {
+    @apply text-5xl font-bold leading-[58px];
+  }
+
+  &__subtitle {
+    @apply text-base;
+  }
+
+  &__carousel {
+    @apply overflow-x-auto pb-8 -mx-8 px-8;
+  }
+
+  &__grid {
+    @apply grid grid-cols-4 gap-8 min-w-[1232px] w-max 2xl:w-full;
+  }
+
+  &__item {
+    @apply block;
+  }
+}

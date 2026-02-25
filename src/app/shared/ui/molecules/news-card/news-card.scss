@@ -1,0 +1,27 @@
+.m-news-card {
+  @apply flex w-full flex-col gap-4;
+
+  &__image-container {
+    @apply w-full overflow-hidden rounded-lg aspect-video shrink-0;
+  }
+
+  &__meta {
+    @apply flex h-6 items-center gap-2;
+  }
+
+  &__icon-container {
+    @apply flex h-6 w-6 items-center justify-center shrink-0;
+  }
+
+  &__date {
+    @apply font-bold text-zinc-800;
+  }
+
+  &__title {
+    @apply text-2xl font-bold line-clamp-2 text-zinc-800;
+  }
+
+  &__description {
+    @apply leading-6 text-zinc-800 line-clamp-6;
+  }
+}

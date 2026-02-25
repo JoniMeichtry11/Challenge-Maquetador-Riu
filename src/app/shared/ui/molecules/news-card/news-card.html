@@ -1,19 +1,17 @@
-<article class="flex w-full flex-col gap-4">
-  <div class="w-full overflow-hidden rounded-lg aspect-video shrink-0">
+<article class="m-news-card">
+  <div class="m-news-card__image-container">
     <app-image src="assets/images/image-placeholder.svg" alt="News image" />
   </div>
-  <div class="flex h-6 items-center gap-2">
-    <div class="flex h-6 w-6 items-center justify-center shrink-0">
+  <div class="m-news-card__meta">
+    <div class="m-news-card__icon-container">
       <app-icon src="assets/images/calendar.svg" />
     </div>
-    <span class="font-bold text-zinc-800">
-      Lorem ipsum dolor sit amet.
-    </span>
+    <span class="m-news-card__date"> Lorem ipsum dolor sit amet. </span>
   </div>
-  <h3 class="text-2xl font-bold line-clamp-2">
+  <h3 class="m-news-card__title">
     Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
   </h3>
-  <p class="leading-6 text-zinc-800 line-clamp-6">
+  <p class="m-news-card__description">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
     Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
     ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam

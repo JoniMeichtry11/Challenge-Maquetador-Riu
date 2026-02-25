@@ -1,41 +1,26 @@
-<div class="flex flex-col gap-12 mx-auto max-w-[1542px] py-24 px-8">
-  <header>
-    <div class="flex w-full flex-col gap-6">
-      <h2
-        id="section-news-title"
-        class="font-bold text-[30px] leading-[32px] md:text-[48px] md:leading-[58px] tracking-normal"
-      >
+<div class="o-news-grid">
+  <header class="o-news-grid__header">
+    <div class="o-news-grid__header-content">
+      <h2 id="section-news-title" class="o-news-grid__title">
         Lorem ipsum dolor sit
       </h2>
-      <div
-        class="flex w-full flex-col gap-6 md:flex-row md:items-center justify-between"
-      >
-        <p class="font-normal text-lg leading-[27px] tracking-normal">
-          Lorem ipsum dolor sit
-        </p>
+      <div class="o-news-grid__controls">
+        <p class="o-news-grid__subtitle">Lorem ipsum dolor sit</p>
 
-        <div class="relative w-full md:w-[300px]">
+        <div class="o-news-grid__search">
           <label for="search" class="sr-only">Search articles</label>
-          <div
-            class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4"
-          >
-            <app-icon src="assets/images/search.svg" class="h-5 w-5" />
-          </div>
-          <input
-            type="search"
-            id="search"
-            class="h-10 w-full rounded-lg border border-zinc-100 bg-zinc-100 pl-12 pr-4"
+          <app-icon
+            src="assets/images/search.svg"
+            class="o-news-grid__search-icon"
           />
+          <input type="search" id="search" class="o-news-grid__search-input" />
         </div>
       </div>
     </div>
   </header>
-  <ul
-    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-    aria-labelledby="section-news-title"
-  >
+  <ul class="o-news-grid__list" aria-labelledby="section-news-title">
     @for (article of articles; track $index) {
-      <li class="list-none">
+      <li class="o-news-grid__item">
         <app-news-card />
       </li>
     }

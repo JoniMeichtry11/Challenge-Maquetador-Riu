@@ -1,3 +1,11 @@
-:host {
-  display: inline-block;
+.a-button {
+  @apply h-10 px-4 rounded-lg text-sm font-medium transition cursor-pointer border-none;
+
+  &--primary {
+    @apply bg-[#E4002B] text-white hover:bg-[#c30024];
+  }
+
+  &--secondary {
+    @apply bg-zinc-200 text-zinc-800 hover:bg-zinc-300;
+  }
 }

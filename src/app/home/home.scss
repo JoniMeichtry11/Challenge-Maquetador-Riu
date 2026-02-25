@@ -1,0 +1,7 @@
+.p-home {
+  @apply min-h-screen bg-white;
+
+  &__section {
+    @apply block;
+  }
+}
