@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NewsCard } from '../../molecules/news-card/news-card';
+import { Icon } from '../../atoms/icon/icon';
 
 @Component({
   selector: 'app-news-grid',
-  imports: [NewsCard],
+  imports: [NewsCard, Icon],
   templateUrl: './news-grid.html',
   styleUrl: './news-grid.scss',
 })

@@ -2,11 +2,9 @@
   class="group relative flex h-[378px] w-[284px] md:h-[480px] md:w-[360px] flex-col justify-end overflow-hidden rounded-lg bg-zinc-200"
 >
   <div class="absolute inset-0 z-0">
-    <img
+    <app-image
       src="assets/images/image-placeholder.svg"
       alt="Featured article image"
-      class="h-full w-full object-cover"
-      loading="lazy"
     />
   </div>
   <div
@@ -23,7 +21,9 @@
       class="mt-4 flex gap-2 font-bold"
     >
       <p class="font-bold leading-6">Lorem ipsum</p>
-      <img src="assets/images/arrow-down.svg" alt="" />
+      <div class="w-6 h-6">
+        <app-icon src="assets/images/arrow-down.svg" />
+      </div>
     </a>
   </div>
 </article>

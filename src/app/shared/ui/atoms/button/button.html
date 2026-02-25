@@ -1,0 +1,10 @@
+<button
+  [class]="
+    'h-10 px-4 rounded-lg text-sm font-medium transition cursor-pointer ' +
+    (variant() === 'primary'
+      ? 'bg-[#E4002B] text-white hover:bg-[#c30024]'
+      : 'bg-zinc-200 text-zinc-800 hover:bg-zinc-300')
+  "
+>
+  <ng-content />
+</button>
